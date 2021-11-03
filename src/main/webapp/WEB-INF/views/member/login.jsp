@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath }"/>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +15,9 @@
 	attr : <%= request.getAttribute("login") %><br>
 	param : <%= request.getParameter("login") %> <!-- null -->
 	
+<hr>
+<a href="http://localhost:8085/root/index">인덱스</a>
+<a href="http://localhost:8085/root/logout">로그아웃</a>
 
 </body>
 </html>

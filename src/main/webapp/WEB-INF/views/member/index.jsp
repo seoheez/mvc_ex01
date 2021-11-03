@@ -8,6 +8,8 @@
 </head>
 <body>index.jsp<br>
 	<h1>기본 페이지 입니다.</h1>
-
+<hr>
+<a href="login">로그인</a>
+<a href="${contextPath }/logout">로그아웃</a>
 </body>
 </html>
